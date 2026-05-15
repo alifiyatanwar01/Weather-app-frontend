@@ -2,20 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>WeatherNow</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>Weather App</h1>
+  <div class="overlay"></div>
 
+  <main class="app">
+    <section class="header">
+      <h1>WeatherNow</h1>
+      <p>Get real-time weather updates for any city</p>
+    </section>
 
-  <input id="cityInput" type="text" placeholder="Enter city name" />
-  <button id="getWeather">Get Weather</button>
+    <section class="search-box">
+      <input id="cityInput" type="text" placeholder="City e.g. Delhi" />
+      <input id="countryInput" type="text" placeholder="Country e.g. India" />
+      <button id="getWeather">Search</button>
+    </section>
 
-  <div id="weatherResult"></div>
+    <section id="weatherResult" class="weather-card">
+      <p class="empty-text">🌤 Search a city to view weather details</p>
+    </section>
+  </main>
 
-  <!-- SCRIPT MUST BE AT BOTTOM -->
   <script src="script.js"></script>
 </body>
 </html>
